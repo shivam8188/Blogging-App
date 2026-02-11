@@ -6,7 +6,7 @@ import ReelFeed from '../../components/ReelFeed'
 const Home = () => {
     const [ videos, setVideos ] = useState([])
     // Autoplay behavior is handled inside ReelFeed
-    const url = "http://localhost:3000"
+    const url = "https://food-app-backend-iblc.onrender.com"
     useEffect(() => {
         axios.get( url + "/api/food", { withCredentials: true })
             .then(response => {
