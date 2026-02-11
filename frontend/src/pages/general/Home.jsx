@@ -6,9 +6,9 @@ import ReelFeed from '../../components/ReelFeed'
 const Home = () => {
     const [ videos, setVideos ] = useState([])
     // Autoplay behavior is handled inside ReelFeed
-
+    const url = "http://localhost:3000"
     useEffect(() => {
-        axios.get("http://localhost:3000/api/food", { withCredentials: true })
+        axios.get( url + "/api/food", { withCredentials: true })
             .then(response => {
 
                 console.log(response.data);
