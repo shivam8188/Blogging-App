@@ -16,8 +16,8 @@ const UserRegister = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
 
-
-        const response = await axios.post("http://localhost:3000/api/auth/user/register", {
+        const url = "http://localhost:3000"
+        const response = await axios.post(url + "/api/auth/user/register", {
             fullName: firstName + " " + lastName,
             email,
             password
