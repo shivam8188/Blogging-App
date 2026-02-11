@@ -18,7 +18,7 @@ const FoodPartnerRegister = () => {
     const password = e.target.password.value;
     const address = e.target.address.value;
     
-    const url = "http://localhost:3000"
+    const url = "https://food-app-backend-iblc.onrender.com"
     
     axios.post(url+"/api/auth/food-partner/register", {
       name:businessName,
