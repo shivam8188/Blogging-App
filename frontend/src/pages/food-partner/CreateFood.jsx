@@ -55,8 +55,10 @@ const CreateFood = () => {
         formData.append('name', name);
         formData.append('description', description);
         formData.append("mama", videoFile);
-
-        const response = await axios.post("http://localhost:3000/api/food", formData, {
+        
+        const url = "http://localhost:3000"
+        
+        const response = await axios.post(url + "/api/food", formData, {
             withCredentials: true,
         })
 
