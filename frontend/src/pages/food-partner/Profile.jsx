@@ -8,7 +8,7 @@ const Profile = () => {
     const [ profile, setProfile ] = useState(null)
     const [ videos, setVideos ] = useState([])
       
-    const url = "http://localhost:3000"
+    const url = "https://food-app-backend-iblc.onrender.com"
     
     useEffect(() => {
         axios.get( url + `/api/food-partner/${id}`, { withCredentials: true })
