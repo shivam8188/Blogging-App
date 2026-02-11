@@ -56,7 +56,7 @@ const CreateFood = () => {
         formData.append('description', description);
         formData.append("mama", videoFile);
         
-        const url = "http://localhost:3000"
+        const url = "https://food-app-backend-iblc.onrender.com"
         
         const response = await axios.post(url + "/api/food", formData, {
             withCredentials: true,
