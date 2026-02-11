@@ -16,7 +16,7 @@ const UserRegister = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
 
-        const url = "http://localhost:3000"
+        const url = "https://food-app-backend-iblc.onrender.com"
         const response = await axios.post(url + "/api/auth/user/register", {
             fullName: firstName + " " + lastName,
             email,
