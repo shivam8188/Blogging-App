@@ -5,6 +5,7 @@ import ReelFeed from '../../components/ReelFeed'
 
 const Home = () => {
     const [ videos, setVideos ] = useState([])
+    const navigate = useNavigate();
     // Autoplay behavior is handled inside ReelFeed
     const url = "https://food-app-backend-iblc.onrender.com"
     useEffect(() => {
@@ -15,10 +16,13 @@ const Home = () => {
 
                 setVideos(response.data.foodItems)
             })
-            .catch(() => { /* noop: optionally handle error */ })
+            .catch((error) => {
+                if (error.response?.status === 401) {
+                    navigate("/register")
+                }
+            })
     }, [])
 
-    // Using local refs within ReelFeed; keeping map here for dependency parity if needed
 
     async function likeVideo(item) {
 
