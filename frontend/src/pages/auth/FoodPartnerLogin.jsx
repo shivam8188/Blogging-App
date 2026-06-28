@@ -31,7 +31,7 @@ const FoodPartnerLogin = () => {
       <div className="auth-card" role="region" aria-labelledby="partner-login-title">
         <header>
           <h1 id="partner-login-title" className="auth-title">Partner login</h1>
-          <p className="auth-subtitle">Access your dashboard and manage orders.</p>
+          <p className="auth-subtitle">Access your dashboard and manage videos.</p>
         </header>
         <form className="auth-form" onSubmit={handleSubmit} noValidate>
           <div className="field-group">
