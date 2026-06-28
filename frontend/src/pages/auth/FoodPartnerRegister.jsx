@@ -45,12 +45,12 @@ const FoodPartnerRegister = () => {
           <p className="auth-subtitle">Grow your business with our platform.</p>
         </header>
         <nav className="auth-alt-action" style={{marginTop: '-4px'}}>
-          <strong style={{fontWeight:600}}>Switch:</strong> <Link to="/user/register">User</Link> • <Link to="/food-partner/register">Food partner</Link>
+          <strong style={{fontWeight:600}}>Switch:</strong> <Link to="/user/register">User</Link> • <Link to="/food-partner/register">App partner</Link>
         </nav>
         <form className="auth-form" onSubmit={handleSubmit} noValidate>
           <div className="field-group">
             <label htmlFor="businessName">Business Name</label>
-            <input id="businessName" name="businessName" placeholder="Tasty Bites" autoComplete="organization" />
+            <input id="businessName" name="businessName" placeholder="Natural view" autoComplete="organization" />
           </div>
           <div className="two-col">
             <div className="field-group">
