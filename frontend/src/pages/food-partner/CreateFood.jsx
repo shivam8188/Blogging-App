@@ -74,13 +74,13 @@ const CreateFood = () => {
         <div className="create-food-page">
             <div className="create-food-card">
                 <header className="create-food-header">
-                    <h1 className="create-food-title">Create Food</h1>
+                    <h1 className="create-food-title">Create Video</h1>
                     <p className="create-food-subtitle">Upload a short video, give it a name, and add a description.</p>
                 </header>
 
                 <form className="create-food-form" onSubmit={onSubmit}>
                     <div className="field-group">
-                        <label htmlFor="foodVideo">Food Video</label>
+                        <label htmlFor="foodVideo">Blogging Video</label>
                         <input
                             id="foodVideo"
                             ref={fileInputRef}
@@ -159,7 +159,7 @@ const CreateFood = () => {
 
                     <div className="form-actions">
                         <button className="btn-primary" type="submit" disabled={isDisabled}>
-                            Save Food
+                            Save Video
                         </button>
                     </div>
                 </form>
